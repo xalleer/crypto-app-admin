@@ -9,7 +9,9 @@ export default function AuthLayout() {
             <h1 className="auth-layout__title">
               Neuro <span className="auth-layout__accent">Trade</span>
             </h1>
-            <p className="auth-layout__subtitle">Адмін-панель для керування, аналітики та доступів</p>
+            <p className="auth-layout__subtitle">
+              Адмін-панель для керування, аналітики та доступів
+            </p>
             <div className="auth-layout__highlights" aria-hidden="true">
               <div className="auth-layout__pill">Швидкий старт</div>
               <div className="auth-layout__pill">Безпечний доступ</div>

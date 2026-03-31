@@ -1,8 +1,8 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import AuthLayout from '@layouts/AuthLayout'
 import MainLayout from '@layouts/MainLayout'
-import SignInPage from '@pages/Auth/SignInPage'
-import SignUpPage from '@pages/Auth/SignUpPage'
+import SignInPage from '@pages/auth/SignInPage'
+import SignUpPage from '@pages/auth/SignUpPage'
 
 const router = createBrowserRouter([
   {

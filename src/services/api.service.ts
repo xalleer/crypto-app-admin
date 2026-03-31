@@ -20,7 +20,7 @@ apiService.interceptors.request.use((config) => {
 })
 
 apiService.interceptors.response.use(
-  (response) => response,
+  (response) => response.data,
   (error) => {
     if (error.response?.status === 401) {
       localStorage.removeItem('auth-storage')

@@ -5,8 +5,16 @@
   justify-content: center;
   padding: 24px;
   background:
-    radial-gradient(900px 600px at 10% 20%, color-mix(in srgb, var(--accent-secondary) 18%, transparent), transparent 60%),
-    radial-gradient(700px 450px at 80% 30%, color-mix(in srgb, var(--accent-primary) 16%, transparent), transparent 55%);
+    radial-gradient(
+      900px 600px at 10% 20%,
+      color-mix(in srgb, var(--accent-secondary) 18%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 450px at 80% 30%,
+      color-mix(in srgb, var(--accent-primary) 16%, transparent),
+      transparent 55%
+    );
 }
 
 .auth-layout__shell {
@@ -23,9 +31,21 @@
   border-radius: 18px;
   border: 1px solid var(--border);
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--bg-secondary) 75%, transparent), color-mix(in srgb, var(--bg-primary) 88%, transparent)),
-    radial-gradient(700px 320px at 15% 10%, color-mix(in srgb, var(--accent-primary) 22%, transparent), transparent 60%),
-    radial-gradient(650px 360px at 70% 75%, color-mix(in srgb, var(--accent-secondary) 20%, transparent), transparent 60%);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--bg-secondary) 75%, transparent),
+      color-mix(in srgb, var(--bg-primary) 88%, transparent)
+    ),
+    radial-gradient(
+      700px 320px at 15% 10%,
+      color-mix(in srgb, var(--accent-primary) 22%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      650px 360px at 70% 75%,
+      color-mix(in srgb, var(--accent-secondary) 20%, transparent),
+      transparent 60%
+    );
 }
 
 .auth-layout__brand-inner {
@@ -83,8 +103,16 @@
   position: absolute;
   inset: -200px;
   background:
-    radial-gradient(600px 350px at 30% 30%, color-mix(in srgb, var(--accent-primary) 26%, transparent), transparent 60%),
-    radial-gradient(500px 320px at 70% 65%, color-mix(in srgb, var(--accent-secondary) 22%, transparent), transparent 60%);
+    radial-gradient(
+      600px 350px at 30% 30%,
+      color-mix(in srgb, var(--accent-primary) 26%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      500px 320px at 70% 65%,
+      color-mix(in srgb, var(--accent-secondary) 22%, transparent),
+      transparent 60%
+    );
   opacity: 0.75;
   transform: translate3d(0, 0, 0);
   animation: authFloat 12s ease-in-out infinite;
