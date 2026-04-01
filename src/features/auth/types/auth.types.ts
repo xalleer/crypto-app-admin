@@ -26,3 +26,10 @@ export interface SignUpResponse {
   access_token: string
   token_type: 'bearer'
 }
+
+export interface GetMeResponse {
+  username: string
+  role: UserRole
+  is_active: boolean
+  created_at: string
+}

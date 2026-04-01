@@ -3,7 +3,8 @@ import AuthLayout from '@layouts/AuthLayout'
 import MainLayout from '@layouts/MainLayout'
 import SignInPage from '@pages/auth/SignInPage'
 import SignUpPage from '@pages/auth/SignUpPage'
-import DashboardPage from "@pages/dashboard/DashboardPage.tsx";
+import DashboardPage from '@pages/dashboard/DashboardPage.tsx'
+import RequireAuth from '@components/RequireAuth'
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
     ],
   },
   {
-    element: <MainLayout />,
+    element: (
+      <RequireAuth>
+        <MainLayout />
+      </RequireAuth>
+    ),
     children: [
       { path: '/', element: <Navigate to="/dashboard" replace /> },
       { path: '/dashboard', element: <DashboardPage /> },

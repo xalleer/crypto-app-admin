@@ -1,5 +1,6 @@
 import apiService from '@services/api.service.ts'
 import type {
+  GetMeResponse,
   SignInRequest,
   SignInResponse,
   SignUpRequest,
@@ -12,4 +13,8 @@ export const signIn = ({ username, password }: SignInRequest): Promise<SignInRes
 
 export const signUp = ({ username, password, role }: SignUpRequest): Promise<SignUpResponse> => {
   return apiService.post('/auth/register', { username, password, role })
+}
+
+export const getMe = (): Promise<GetMeResponse> => {
+  return apiService.get('/auth/me')
 }
