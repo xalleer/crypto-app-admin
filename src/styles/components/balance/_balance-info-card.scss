@@ -1,9 +1,6 @@
-.balance-info-card__value {
-  color: var(--text-primary);
-  &--plus {
-    color: var(--success);
-  }
-  &--minus {
-    color: var(--error);
-  }
+.balance-info-card__value--plus {
+  color: var(--success) !important;
+}
+.balance-info-card__value--minus {
+  color: var(--error) !important;
 }

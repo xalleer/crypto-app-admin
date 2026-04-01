@@ -1,5 +1,5 @@
 import {Card, Grid, Typography} from "@mui/joy";
-import {formatCurrency} from "@utils/formatCurrency.ts";
+import {formatCurrency} from "@utils/formatCurrency";
 import '../../../styles/components/balance/_balance-info-card.scss'
 
 interface BalanceInfoCardProps {
@@ -19,8 +19,8 @@ export default function BalanceInfoCard({ balance, title, grid, isPnl }: Balance
   const getClassColor = () => {
     if (!isPnl) return 'balance-info-card__value'
 
-    if (isNegative) return 'balance-info-card__value--minus'
-    if (isPositive) return 'balance-info-card__value--plus'
+    if (isNegative) return 'balance-info-card__value balance-info-card__value--minus'
+    if (isPositive) return 'balance-info-card__value balance-info-card__value--plus'
 
     return 'balance-info-card__value'
   }

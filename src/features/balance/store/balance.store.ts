@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { getBalance } from '@features/balance'
+import { getBalance as getBalanceApi } from '@features/balance'
 
 interface BalanceState {
   availableBalance: number
@@ -19,11 +19,11 @@ export const useBalanceStore = create<BalanceState>()((set) => ({
   totalPnl: 0,
   unrealizedPnl: 0,
   isLoading: false,
-  error: null,
+  error: true,
   getBalance: async () => {
     set({ isLoading: true, error: null })
     try {
-      const response = await getBalance()
+      const response = await getBalanceApi()
       set({
         availableBalance: response.available_balance,
         dailyPnl: response.daily_pnl,
