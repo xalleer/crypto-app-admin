@@ -10,6 +10,6 @@ export const signIn = ({ username, password }: SignInRequest): Promise<SignInRes
   return apiService.post('/auth/login', { username, password })
 }
 
-export const signUp = ({ username, password }: SignUpRequest): Promise<SignUpResponse> => {
-  return apiService.post('/auth/register', { username, password })
+export const signUp = ({ username, password, role }: SignUpRequest): Promise<SignUpResponse> => {
+  return apiService.post('/auth/register', { username, password, role })
 }
