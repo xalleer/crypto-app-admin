@@ -1,8 +1,7 @@
-import { Navigate } from 'react-router-dom'
-import type { JSX } from 'react'
+import { useAuthStore } from '@features/auth'
+
 export default function RequireAuth({ children }: { children: JSX.Element }) {
-  const raw = localStorage.getItem('auth-storage')
-  const token = raw ? (JSON.parse(raw) as { state?: { token?: string | null } }).state?.token : null
+  const token = useAuthStore((s) => s.token)
   if (!token) return <Navigate to="/sign-in" replace />
   return children
 }

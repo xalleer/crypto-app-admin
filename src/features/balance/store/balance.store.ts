@@ -19,7 +19,7 @@ export const useBalanceStore = create<BalanceState>()((set) => ({
   totalPnl: 0,
   unrealizedPnl: 0,
   isLoading: false,
-  error: true,
+  error: null,
   getBalance: async () => {
     set({ isLoading: true, error: null })
     try {

@@ -1,2 +1,2 @@
-export * from './CustomInput.tsx'
-export * from './CustomButton.tsx'
+export { default as CustomInput } from './CustomInput.tsx'
+export { default as CustomButton } from './CustomButton.tsx'

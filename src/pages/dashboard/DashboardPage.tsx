@@ -3,16 +3,12 @@ import { useEffect } from 'react'
 import { useAuthStore } from '@features/auth'
 
 export default function DashboardPage() {
-  const setUser = useAuthStore((s) => s.setUser)
+  const { user, setUser } = useAuthStore()
 
   useEffect(() => {
-    const run = async () => {
-      const me = await getMe()
-      setUser(me)
-    }
-
-    void run()
-  }, [])
+    if (user) return
+    void getMe().then(setUser)
+  }, [user, setUser])
 
   return <div>Dashboard</div>
 }
