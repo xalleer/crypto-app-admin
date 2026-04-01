@@ -4,7 +4,7 @@ import { useAuthStore, UserRole } from '@features/auth'
 import { normalizeRole } from '@utils/normalizeRole.ts'
 import { navItems } from '@layouts/components/navigation/navConfig.ts'
 import NavItem from '@layouts/components/navigation/NavItem.tsx'
-import {useLogout} from "@features/auth/hooks/useLogout.ts";
+import { useLogout } from '@features/auth/hooks/useLogout.ts'
 
 export default function Sidebar() {
   const { user } = useAuthStore()
@@ -48,12 +48,7 @@ export default function Sidebar() {
       </Box>
 
       <Box sx={{ mb: 2, width: '100%' }}>
-        <CustomButton
-          onClick={logout}
-          variant="outlined"
-          sx={{ width: '100%' }}
-          text={'Вийти'}
-        />
+        <CustomButton onClick={logout} variant="outlined" sx={{ width: '100%' }} text={'Вийти'} />
       </Box>
     </Box>
   )

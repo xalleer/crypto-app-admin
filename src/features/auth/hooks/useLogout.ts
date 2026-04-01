@@ -1,5 +1,5 @@
-import {useAuthStore} from "@features/auth";
-import {useNavigate} from "react-router-dom";
+import { useAuthStore } from '@features/auth'
+import { useNavigate } from 'react-router-dom'
 
 export const useLogout = () => {
   const { clearToken } = useAuthStore()

@@ -1,0 +1,9 @@
+.balance-info-card__value {
+  color: var(--text-primary);
+  &--plus {
+    color: var(--success);
+  }
+  &--minus {
+    color: var(--error);
+  }
+}

@@ -1,7 +1,6 @@
 import { ListItem, ListItemButton, ListItemDecorator, Typography } from '@mui/joy'
-import {useLocation, useNavigate} from 'react-router-dom'
-import type {NavItem} from "@layouts/components/navigation/navConfig.ts";
-
+import { useLocation, useNavigate } from 'react-router-dom'
+import type { NavItem } from '@layouts/components/navigation/navConfig.ts'
 
 export default function NavItem(props: NavItem) {
   const menuIconSx = { width: 18, height: 18 }

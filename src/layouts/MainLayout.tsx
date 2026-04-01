@@ -5,7 +5,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline'
 import Sidebar from '@layouts/components/navigation/Sidebar.tsx'
 import MobileSidebar from '@layouts/components/navigation/MobileSidebar.tsx'
 import CustomButton from '@components/ui/CustomButton.tsx'
-import {useLogout} from "@features/auth/hooks/useLogout.ts";
+import { useLogout } from '@features/auth/hooks/useLogout.ts'
 
 export default function MainLayout() {
   const [open, setOpen] = useState(false)
