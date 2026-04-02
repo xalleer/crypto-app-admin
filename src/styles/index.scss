@@ -1,7 +1,7 @@
-@forward './global';
-@forward './layouts/_auth-layout';
-@forward './pages/_sign-up';
-@forward './variables';
-@forward './components/balance/_balance-info-card';
-@forward './components/_loading-state';
-
+@use './variables';
+@use './global';
+@use './layouts/_auth-layout';
+@use './pages/_sign-up';
+@use './components/balance/_balance-info-card';
+@use './components/_loading-state';
+@use './components/positions/_position-card';

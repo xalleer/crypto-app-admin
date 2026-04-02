@@ -1,0 +1,71 @@
+.position-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.2s ease;
+
+  &:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__symbol {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  &__signal {
+    font-size: 13px;
+    font-weight: 600;
+
+    &--long {
+      color: var(--success);
+    }
+
+    &--short {
+      color: var(--error);
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  &__value {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 500;
+
+    &--danger {
+      color: var(--error);
+    }
+
+    &--success {
+      color: var(--success);
+    }
+  }
+
+  &__date {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+}

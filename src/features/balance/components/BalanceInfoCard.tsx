@@ -1,5 +1,5 @@
-import {Card, Grid, Typography} from "@mui/joy";
-import {formatCurrency} from "@utils/formatCurrency";
+import { Card, Grid, Typography } from '@mui/joy'
+import { formatCurrency } from '@utils/formatCurrency'
 import '../../../styles/components/balance/_balance-info-card.scss'
 
 interface BalanceInfoCardProps {
